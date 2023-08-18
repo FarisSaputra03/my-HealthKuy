@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 export default function List() {
   return (
-    <div className="flex ml-40">
-      <div className=" grid grid-cols-2 gap-4 place-content-stretch w-96">
+    <div className="flex w-auto md:ml-36">
+      <div className=" md:grid grid-cols-2 gap-4  hidden place-content-stretch w-96">
         <div>
           <Image width={300} height={300} src="/img/gagah.jpg" alt="" />
         </div>
@@ -17,7 +17,7 @@ export default function List() {
           <Image width={300} height={300} src="/img/biasa.jpg" alt="" />
         </div>
       </div>
-      <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+      <div className="lg:w-1/2 w-full  ml-5 lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h2 className="text-sm title-font text-blue-500 font-medium tracking-widest">
           Doctor Specialist
         </h2>

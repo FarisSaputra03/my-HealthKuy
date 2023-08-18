@@ -49,28 +49,30 @@ export default function Artikel() {
         </div>
         <div className="flex flex-wrap -m-4">
           {listArtikel.map((data: any, index) => (
-            <div key={index + 1} className="xl:w-1/4 md:w-1/2 p-4">
+            <div key={index + 1} className="xl:w-1/4 md:w-1/2 p-5">
               <div className="h-full border-2 group-hover:scale-110  card hover:shadow border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <div className="h-40 rounded w-full object-cover object-center mb-6">
                   <Image width={720} height={400} src={data.img} alt="" />
                 </div>
-                <div className="flex">
-                  <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">
-                    Healthy Living
-                  </h3>
-                  <p className="font-normal text-sm">{data.days}</p>
-                </div>
-                <h2 className="text-lg text-gray-900 font-bold title-font mb-4">
-                  {data.title}
-                </h2>
-                <div className="flex gap-5">
-                  <Image width={24} height={24} src={data.img2} alt="" />
-                  <p>{data.name}</p>
-                </div>
-                <div className="pt-5 pl-7">
-                  <button className="w-auto text-blue-500 bg-blue-100 border-0 py-2 px-16 focus:outline-none rounded-lg text-lg">
-                    Read Now
-                  </button>
+                <div className="p-5">
+                  <div className="flex pt-2">
+                    <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">
+                      Healthy Living
+                    </h3>
+                    <p className="font-normal text-sm">{data.days}</p>
+                  </div>
+                  <h2 className="text-sm text-gray-900 font-bold title-font mb-4">
+                    {data.title}
+                  </h2>
+                  <div className="flex gap-5">
+                    <Image width={24} height={24} src={data.img2} alt="" />
+                    <p>{data.name}</p>
+                  </div>
+                  <div className="pt-7 pl-5 w-auto">
+                    <button className="w-auto text-blue-500 bg-blue-100 border-0 py-2 px-16 focus:outline-none rounded-lg text-sm">
+                      Read Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

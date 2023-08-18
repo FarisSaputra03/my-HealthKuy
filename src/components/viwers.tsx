@@ -115,6 +115,11 @@ export default function Viwers() {
                     </p>
                   </div>
                 </div>
+                <div className="lg:w-1/2 pr-12 w-full grid justify-end leading-relaxed">
+                  <button className="mx-auto mt-6 text-blue-500 bg-white border-2 border-cyan-500  py-2 px-5 focus:outline-none hover:bg-white rounded-lg">
+                    See More Stories
+                  </button>
+                </div>
               </div>
             </div>
           </div>

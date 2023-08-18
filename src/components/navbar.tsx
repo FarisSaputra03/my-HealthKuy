@@ -71,7 +71,7 @@ export default function Navbar() {
 
           <span className="ml-3 text-xl font-bold">HealthKuy</span>
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap pr-96 items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           <a className="mr-5 text-cyan-500 hover:text-cyan-700 font-bold">
             Home
           </a>

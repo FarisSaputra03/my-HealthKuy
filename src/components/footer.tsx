@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="bg-slate-800">
-      <div className="container w-full  px-10 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap ">
+      <div className="container w-full  px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap ">
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <svg

@@ -155,7 +155,7 @@ export default function Content() {
               Match Your Needs
             </h1>
           </div>
-          <p className="lg:w-1/2 w-full grid justify-end leading-relaxed text-gray-500">
+          <p className="lg:w-1/2 w-full text-sm grid justify-end leading-relaxed text-gray-500">
             Lorem Ipsum is simply dummy text of the printing typesetting
             industry.
           </p>
