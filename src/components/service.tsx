@@ -146,7 +146,7 @@ export default function Service() {
                 <div
                   key={index + 1}
                   className="grid pb-3 md:grid-rows-1 lg:grid-cols-1">
-                  <div className="border border-gray-200 p-4 rounded-lg">
+                  <div className="border p-4 rounded-lg">
                     <div className=" flex gap-5">
                       <div>{data.svg}</div>
                       <div>

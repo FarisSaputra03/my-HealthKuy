@@ -1,8 +1,26 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react"
+import Link from "next/link";
+import "../styles/globals.css";
+import "../styles/navbar.css";
 
 export default function Navbar() {
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  useEffect(() => {
+    if (window != undefined) {
+      window.addEventListener("scroll", changeColor);
+    }
+  });
   return (
-    <header className="text-gray-600 body-font">
+    <header className={color ? "header header-bg" : "header"}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <svg
@@ -10,7 +28,8 @@ export default function Navbar() {
             height="35"
             viewBox="0 0 35 35"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M26.7511 15.3605C26.2529 15.8609 25.8714 16.465 25.6337 17.1294C25.396 17.7939 25.308 18.5025 25.376 19.2049L25.3523 19.1812C25.4223 20.008 25.3105 20.8399 25.0251 21.6191C24.7397 22.3982 24.2875 23.1058 23.7 23.6925C23.1124 24.2791 22.4037 24.7307 21.6232 25.0155C20.8428 25.3005 20.0095 25.4121 19.1815 25.3422L19.2052 25.3659C18.2148 25.2739 17.22 25.489 16.3564 25.9821C15.493 26.4752 14.8028 27.2222 14.3801 28.1212C13.9575 29.0203 13.8227 30.0276 13.9944 31.0059C14.1663 31.9841 14.636 32.8857 15.3397 33.5877C16.0434 34.2896 16.9468 34.7578 17.9267 34.9283C18.9068 35.0989 19.9155 34.9635 20.8156 34.5407C21.7157 34.1178 22.4632 33.4282 22.9563 32.5656C23.4494 31.703 23.6641 30.7097 23.571 29.7208L23.596 29.7444C23.5261 28.9178 23.6377 28.0858 23.9231 27.3066C24.2085 26.5274 24.6609 25.8199 25.2484 25.2332C25.836 24.6466 26.5447 24.195 27.3251 23.9101C28.1056 23.6252 28.9388 23.5136 29.7668 23.5834L29.7419 23.5598C30.5509 23.6324 31.3653 23.5 32.1095 23.1747C32.8536 22.8495 33.5035 22.3419 33.9989 21.6992C34.4942 21.0564 34.8192 20.2991 34.9433 19.4977C35.0675 18.6961 34.9871 17.8763 34.7094 17.114C34.4318 16.3518 33.9659 15.6719 33.355 15.1373C32.7441 14.6027 32.0079 14.2308 31.2146 14.0559C30.4214 13.8811 29.5967 13.9089 28.8172 14.1369C28.0376 14.365 27.3284 14.7858 26.755 15.3605H26.7511Z"
               fill="#232631"
@@ -42,7 +61,8 @@ export default function Navbar() {
                 y1="34.2455"
                 x2="24.4579"
                 y2="9.62751"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stop-color="#0C64DC" />
                 <stop offset="0.876286" stop-color="#2C95DB" />
               </linearGradient>
@@ -52,7 +72,8 @@ export default function Navbar() {
                 y1="32.5243"
                 x2="17.4765"
                 y2="-5.42181"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stop-color="#0C64DC" />
                 <stop offset="0.876286" stop-color="#2C95DB" />
               </linearGradient>
@@ -62,7 +83,8 @@ export default function Navbar() {
                 y1="20.3002"
                 x2="10.5335"
                 y2="-4.31422"
-                gradientUnits="userSpaceOnUse">
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stop-color="#0C64DC" />
                 <stop offset="0.876286" stop-color="#2C95DB" />
               </linearGradient>
@@ -72,12 +94,20 @@ export default function Navbar() {
           <span className="ml-3 text-xl font-bold">HealthKuy</span>
         </a>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 text-cyan-500 hover:text-cyan-700 font-bold">
-            Home
-          </a>
-          <a className="mr-5 hover:text-gray-900 font-bold">Article</a>
-          <a className="mr-5 hover:text-gray-900 font-bold">Services</a>
-          <a className="mr-5 hover:text-gray-900 font-bold">Pharmacy</a>
+          <Link href={"/"}>
+            <button className="mr-5 text-cyan-500 hover:text-cyan-700 font-bold">
+              Home
+            </button>
+          </Link>
+            <button className="mr-5 text-black hover:text-gray-900 font-bold">
+              Article
+            </button>
+          <button className="mr-5 text-black hover:text-gray-900 font-bold">
+            Services
+          </button>
+          <button className="mr-5 text-black hover:text-gray-900 font-bold">
+            Pharmacy
+          </button>
         </nav>
         <div className="grid gap-5 grid-cols-2">
           <button className="inline-flex items-center text-black font-bold bg-white border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded text-base mt-5 md:mt-0">

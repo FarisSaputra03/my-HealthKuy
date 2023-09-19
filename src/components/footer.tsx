@@ -83,32 +83,32 @@ export default function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Appointment Doctor
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Free Consultation
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Medicinal Herb
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Find Trusted Doctor
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Test Covid 19
                 </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">
+                <a className="text-gray-500">
                   Booster Vaccine
                 </a>
               </li>
@@ -120,16 +120,16 @@ export default function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Contact Us</a>
+                <a className="text-gray-500">Contact Us</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">About Us</a>
+                <a className="text-gray-500">About Us</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Articles</a>
+                <a className="text-gray-500">Articles</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Pharmacy</a>
+                <a className="text-gray-500">Pharmacy</a>
               </li>
             </nav>
           </div>
@@ -139,16 +139,16 @@ export default function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Tiktok</a>
+                <a className="text-gray-500">Tiktok</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Blog</a>
+                <a className="text-gray-500">Blog</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Twitter</a>
+                <a className="text-gray-500">Twitter</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800">Instagram</a>
+                <a className="text-gray-500">Instagram</a>
               </li>
             </nav>
           </div>
